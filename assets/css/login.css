@@ -1,0 +1,76 @@
+html,
+body {
+  height: 100%;
+}
+
+.form-login {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+.form-login .form-floating:focus-within {
+  z-index: 2;
+}
+
+.password-field {
+  position: relative;
+}
+
+.lock-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* 调整鎖的位置 */
+  transform: translateY(-50%);
+  color: #888; /* 鎖的颜色 */
+}
+
+.form-control {
+  padding-left: 30px; 
+  
+  height: 40px; 
+  border-radius: 20px; /*椭圆形 */
+  border: 1px solid #ccc; 
+  box-sizing: border-box;
+}
+
+.gray-text {
+  color: #888; 
+  text-decoration: none; 
+  border-bottom: 1px solid #444; 
+}
+
+.btn-login {
+  border: none; 
+  background-color: #4e7d7b; 
+  color: #fff; 
+  padding: 10px 10px; /* 內邊距 */
+  font-size: 16px; /* 字體大小 */
+  border-radius: 999px; 
+}
+
+.btn-login:active {
+  background-color: #5a7171; /* 按鈕的背景顏色 */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* 陰影效果 */
+}
+
+.btn-login:hover {
+  background-color: #5a7171; 
+}
+
+.btn-register {
+  border: none;
+  background-color: #2b4644;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 999px;
+}
+
+.btn-register:active {
+  background-color: #2e4342;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-register:hover {
+  background-color: #2e4342;
+}

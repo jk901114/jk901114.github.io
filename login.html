@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登入</title>
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI" crossorigin="anonymous">
+
+    <style>
+
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/login.css" rel="stylesheet">
+</head>
+
+<body class="d-flex align-items-center py-4 bg-body-tertiary">
+
+    <main class="form-login w-100 m-auto text-center">
+        <form>
+            <img class="mb-4" src="./assets/images/logo.svg" alt="" width="150rem">
+
+            <div class="form-floating mb-3">
+                <div class="password-field">
+                    <i class="fa-regular fa-user lock-icon"></i>
+                    <input type="text" class="form-control" aria-label="帳號" id="username" placeholder="帳號">
+                </div>
+            </div>
+            <div class="form-floating mb-3">
+                <div class="password-field">
+                    <i class="fa-solid fa-lock lock-icon"></i>
+                    <input type="password" class="form-control" aria-label="密碼" id="password" placeholder="密碼">
+                </div>
+            </div>
+            <div class="form-label my-3 d-flex justify-content-between">
+                <label class="form-label" id="forgotPassword">
+                    <a href="#" class="gray-text">
+                        忘記密碼?</a>
+                </label>
+                <label class="form-label" id="guestLogin">
+                    <a href="#" class="gray-text">
+                        遊客登入</a>
+                </label>
+            </div>
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-login w-100 py-2" type="button" onclick="login_click()">登入</button>
+                <button class="btn btn-register  w-100 py-2" type="submit">註冊</button>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+                <span class="fa-stack fa-2x" style="font-size: 1.5rem;">
+                    <i class="fa-brands fa-facebook-f fa-stack-1x"></i>
+                    <i class="fa-regular fa-circle fa-stack-2x"></i>
+                </span>
+                <span class="fa-stack fa-2x" style="font-size: 1.5rem;">
+                    <i class="fa-brands fa-instagram fa-stack-1x"></i>
+                    <i class="fa-regular fa-circle fa-stack-2x"></i>
+                </span>
+                <span class="fa-stack fa-2x" style="font-size: 1.5rem;">
+                    <i class="fa-brands fa-google fa-stack-1x"></i>
+                    <i class="fa-regular fa-circle fa-stack-2x"></i>
+                </span>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script>
+    function login_click() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        // if (username == "admin" && password == "admin") {
+        if (username != "" && password != "") {
+            window.location.href = "index.html";
+        } else {
+            alert("帳號或密碼錯誤");
+        }
+    }
+</script>
