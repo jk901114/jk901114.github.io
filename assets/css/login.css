@@ -19,42 +19,42 @@ body {
 .lock-icon {
   position: absolute;
   top: 50%;
-  left: 10px; /* 调整鎖的位置 */
+  left: 10px; /* 调整锁图标的位置 */
   transform: translateY(-50%);
-  color: #888; /* 鎖的颜色 */
+  color: #888; /* 锁图标的颜色 */
 }
 
 .form-control {
-  padding-left: 30px; 
+  padding-left: 30px; /* 确保文本框文本不被图标覆盖 */
   
-  height: 40px; 
-  border-radius: 20px; /*椭圆形 */
-  border: 1px solid #ccc; 
-  box-sizing: border-box;
+  height: 40px; /* 设置输入框的高度 */
+  border-radius: 20px; /* 使用 border-radius 创建椭圆形 */
+  border: 1px solid #ccc; /* 设置边框 */
+  box-sizing: border-box; /* 确保边框宽度不会增加输入框的尺寸 */
 }
 
 .gray-text {
-  color: #888; 
-  text-decoration: none; 
-  border-bottom: 1px solid #444; 
+  color: #888; /* 灰色文字 */
+  text-decoration: none; /* 移除链接默认下划线 */
+  border-bottom: 1px solid #444; /* 深灰色底线 */
 }
 
 .btn-login {
-  border: none; 
-  background-color: #4e7d7b; 
-  color: #fff; 
-  padding: 10px 10px; /* 內邊距 */
+  border: none; /* 移除邊框 */
+  background-color: #4e7d7b; /* 藍色背景 */
+  color: #fff; /* 白色文字 */
+  padding: 10px 20px; /* 內邊距 */
   font-size: 16px; /* 字體大小 */
-  border-radius: 999px; 
+  border-radius: 999px; /* 圓角 */
 }
 
 .btn-login:active {
-  background-color: #5a7171; /* 按鈕的背景顏色 */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* 陰影效果 */
+  background-color: #5a7171; /* 更改按鈕的背景顏色 */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* 添加陰影效果 */
 }
 
 .btn-login:hover {
-  background-color: #5a7171; 
+  background-color: #5a7171; /* 深藍色背景 */
 }
 
 .btn-register {
