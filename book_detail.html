@@ -13,7 +13,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI" crossorigin="anonymous">
 
-    <!-- owl.carousel -->
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"></link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"></link>
 
@@ -91,13 +91,13 @@
             margin: 0;
         }
         .discount-price-border {
-            border: 2px solid #5b9e9a94; /* 自定义边框颜色和宽度 */
-            border-radius: 15px; /* 设置圆角半径 */
-            padding: 10px; /* 内边距 */
+            border: 2px solid #5b9e9a94; 
+            border-radius: 15px; 
+            padding: 10px; 
         }
         .content-border{
-            border-right: 2px solid #5b9e9a94; /* 自定义边框颜色和宽度 */
-            padding: 10px; /* 内边距 */
+            border-right: 2px solid #5b9e9a94; 
+            padding: 10px; 
         }
         .footer-hr {
             border-top: 5px solid #2c4947;
@@ -190,7 +190,7 @@
                     <img src="./assets/images/user_photo.png" alt="" width="75" height="75" class="rounded-circle">
                 </div>
                 <div class="col d-flex align-items-center justify-content-center">
-                    <p><span style="font-weight: bolder;">終於脫離期末地域</span><br />ID : 2589647</p>
+                    <p><span style="font-weight: bolder;">終於脫離期末地獄</span><br />ID : 2589647</p>
                 </div>
             </div>
             <div class="sidebar_item">
@@ -247,22 +247,22 @@
                 <div class="row">
                     <div class="col col-lg-2">
                         <div class="content-border">
-                            <h2 class="display-7 mb-3">目錄</h2>
-                            <p>棄子</p>
-                            <p>第一章&nbsp;&nbsp;八呎大人</p>
+                            <h2 class="display-7 mb-5">目錄</h2>
+                            <p>契子</p>
+                            <p>第一章&nbsp;&nbsp;八尺大人</p>
                             <p>第二章&nbsp;&nbsp;錯抓</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="content-border">
-                            <h2 class="display-7 mb-3">作者簡介</h2>
+                            <h2 class="display-7 mb-5">作者簡介</h2>
                             <p>作者名</p>
                             <p>多變的雙魚。</p>
                             <p>書寫多變，繕寫靈異、驚悚、愛情、奇幻與勵志。</p>
                         </div>
                     </div>
                     <div class="col">
-                        <h2 class="display-7 mb-3">詳細資料</h2>
+                        <h2 class="display-7 mb-5">詳細資料</h2>
                         <p>ISBN: 9789869794497</p>
                         <p>叢書系列: 境外之城</p>
                         <p>規格: 瓶裝/272葉/21 x 14.8 x 1.4 cm/普通級/單色印刷</p>
@@ -349,7 +349,7 @@
                                 18:00</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">客服專線 02-2558-1417</a>
                         </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">傳 真 02=27847008</a>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">傳 真 02-27847008</a>
                         </li>
                     </ul>
                 </div>
@@ -418,7 +418,7 @@
             return datestr;
         }
 
-        //再來用去尋找網址列中是否有資料傳遞(QueryString)
+        
         if(url.indexOf('?')!=-1)
         {
             var book_title = getParameterByName('book_title');
@@ -431,13 +431,13 @@
                 var categories = Object.keys(data);
 
                 var starRating = setStarRating(Math.floor(Math.random() * 6));
-                var publisher_list = ['奇幻基地', '知翎文化', '文字復興', '圓滑文創', '牛頓出版'];
+                var publisher_list = ['奇幻基地', '知翎文化', '文字復興', '圓滑文創', '牛頓出版', '晨星', '瑞昇', '野人', '小天下','新經典文化'];
                 var publisher = publisher_list[Math.floor(Math.random() * publisher_list.length)];
                 var publication_date = setRandomDate();
                 var language_list = ['繁體中文', '簡體中文', '英文'];
                 var language = language_list[Math.floor(Math.random() * language_list.length)];
-                var min_price = 150;
-                var max_price = 1000;
+                var min_price = 100;
+                var max_price = 400;
                 var price = Math.floor(Math.random() * (max_price - min_price + 1)) + min_price;
                 var discount_price = 0;
 
